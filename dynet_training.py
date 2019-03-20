@@ -44,7 +44,7 @@ def onehot_encode_char(alphabet, char):
 
 
 learning_rate = 0.001
-EPOCHS = 200
+EPOCHS = 400
 print(f"HIDDEN UNITS NUM: {HIDDEN_NUM}")
 print(f"EPOCHS NUM: {EPOCHS}")
 print(f"LEARNING RATE: {learning_rate}")
