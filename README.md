@@ -20,7 +20,7 @@ example of working google colaboratory (py3) cells
 ```
 from IPython.display import Image, display
 
-listOfImageNames = !for fn in $(ls plots/4_hidden_l/*); do echo $fn; done;
+listOfImageNames = !for fn in $(ls plots/*/*); do echo $fn; done;
 
 for imageName in listOfImageNames:
     display(Image(filename=imageName))
