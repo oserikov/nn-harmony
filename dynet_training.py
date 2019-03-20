@@ -29,7 +29,6 @@ def initialize_hidden_num():
 
 
 HIDDEN_NUM, PLOTS_DIR_NAME = initialize_hidden_num()
-print("HIDDEN LAYERS NUM: " + str(HIDDEN_NUM))
 
 training_data = list(filter(None, read_from_stdin()))
 # training_data = list(filter(None, read_training_data_from_file('tmp.txt')))
@@ -46,7 +45,9 @@ def onehot_encode_char(alphabet, char):
 
 learning_rate = 0.001
 EPOCHS = 200
-
+print(f"HIDDEN UNITS NUM: {HIDDEN_NUM}")
+print(f"EPOCHS NUM: {EPOCHS}")
+print(f"LEARNING RATE: {learning_rate}")
 
 def train_ml(num_of_epochs=10):
     input_dim = len(training_data[0][0][0])
